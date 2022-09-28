@@ -34,10 +34,10 @@ body {
     align-items: center;
 }
 
-.btn-primary{
+.btn-primary {
     background: var(--dark-blue);
     border: none;
-    border-radius:  4px;
+    border-radius: 4px;
     color: var(--white);
     font-weight: bold;
     font-size: 14px;
@@ -54,16 +54,16 @@ body {
     border-radius: 4px;
     color: var(--dark-blue);
     font-weight: bold;
-    font-size: 14px; 
+    font-size: 14px;
     padding: 1rem;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background: var(--dark-blue);
     color: var(--white);
 }
 
-.heading-xl{
+.heading-xl {
     font-size: 72px;
     line-height: 78px;
     word-spacing: -1px;
@@ -79,6 +79,7 @@ body {
     font-size: 18px;
     line-height: 32px;
     word-spacing: -0.2px;
+    text-transform: uppercase;
 }
 
 .heading-s {
@@ -87,7 +88,7 @@ body {
     word-spacing: -2.5px;
 }
 
-.quote{  
+.quote {
     font-size: 20px;
     line-height: 32px;
     word-spacing: 0px;
@@ -99,7 +100,7 @@ body {
     word-spacing: -2.5px;
 }
 
-#phone-picture{
+#phone-picture {
     margin-top: 2rem;
 }
 
@@ -108,10 +109,39 @@ body {
     flex-flow: column nowrap;
 }
 
-.spec-box > .value {
+.spec-box>.value {
     font-weight: bold;
 }
 
-.spec-box > .name {
+.spec-box>.name {
     font-variant: small-caps;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: var(--white);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.social-btns>* {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#middle-section {
+    background: #172339;
+    color: var(--white);
+    font-family: 'Epilogue', sans-serif;   
+}
+ 
+#main-section-name{
+    align-items: center
 }
