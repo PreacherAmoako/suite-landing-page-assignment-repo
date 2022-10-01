@@ -188,10 +188,10 @@ body {
 @media screen and (min-width:768px) {
     #spec-section {
         display: flex;
-        text-align: center;
+        /* text-align: center; */
         justify-content: space-between;
-        padding: 0 4rem;
-
+        /* padding: 0 14rem; */
+        padding: 4rem 10rem 1rem 10rem;
     }
 
     .spec-footer {
@@ -199,6 +199,7 @@ body {
         justify-content: space-between;
         padding: 4rem 1rem 4rem 1rem;
     }
+
     .width-768 {
         /* position: absolute; */
         display: flex;
@@ -207,45 +208,100 @@ body {
         /* padding: -px; */
         /* flex-flow: row; */
     }
-    
-    .picture-position{
+
+    .picture-position {
         /* position: absolute; */
         /* z-index: ; */
         margin-left: -4rem;
 
     }
-    
-    p.paragraph-width{
-       max-width: 350px;
-       /* border-width: 350px; */
-       
+
+    p.paragraph-width {
+        max-width: 350px;
+        /* border-width: 350px; */
+
     }
 
-    .picture-size{
+    .picture-size {
         width: 281;
         height: 482;
     }
 
-    .catch-phrase-size{
+    .catch-phrase-size {
         max-width: 573px;
         position: relative;
     }
 
-    .custom-header{
+    .custom-header {
         padding-left: 4rem;
         padding-right: 4rem;
     }
-     
-    .spec-footer{
+
+    .spec-footer {
         padding-left: 4rem;
         padding-right: 4rem;
     }
-    
-    .middle-section{
+
+    .middle-section {
         margin-left: 4rem;
         margin-right: 4rem;
     }
 }
 
 @media screen and (min-width:1440px) {
+    .spec-section-1440p {
+        /* display: flex; */
+        flex-flow: column nowrap;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 14rem;
+        top: 5rem;
+    }
+
+    .width-1440p {
+        display: flex;
+        position: static;
+        margin-left: -10rem;
+        ;
+        /* position: relative; */
+    }
+
+    #main-column-1440p {
+        position: relative;
+        /* display: grid;
+            grid-template-columns: 80% */
+
+    }
+
+    .middle-section {
+        display: flex;
+        flex-flow: row;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .neg-margin {
+        margin-bottom: -2.7rem;
+    }
+
+    .quote {
+        max-width: 350px;
+    }
+
+    .custom-header {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .spec-footer {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .middle-section {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 }
+
