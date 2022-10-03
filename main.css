@@ -33,8 +33,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
-
-
 }
 
 .btn-primary {
@@ -122,7 +120,6 @@ body {
     font-weight: bold;
     font-size: 3rem;
     color: var(--dark-blue);
-
 }
 
 .spec-box>.name {
@@ -183,14 +180,31 @@ body {
     color: var(--dark-blue);
 }
 
+#pic-merge {
+    position: relative;
+}
+
+#pic-merge>picture {
+    position: relative;
+    z-index: 2;
+}
+
+#pic-merge>img {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
 
 
 @media screen and (min-width:768px) {
     #spec-section {
         display: flex;
-        /* text-align: center; */
         justify-content: space-between;
-        /* padding: 0 14rem; */
         padding: 4rem 10rem 1rem 10rem;
     }
 
@@ -201,25 +215,18 @@ body {
     }
 
     .width-768 {
-        /* position: absolute; */
         display: flex;
         justify-content: center;
         margin-left: 4rem;
-        /* padding: -px; */
-        /* flex-flow: row; */
     }
 
     .picture-position {
-        /* position: absolute; */
-        /* z-index: ; */
         margin-left: -4rem;
 
     }
 
     p.paragraph-width {
         max-width: 350px;
-        /* border-width: 350px; */
-
     }
 
     .picture-size {
@@ -240,17 +247,28 @@ body {
     .spec-footer {
         padding-left: 4rem;
         padding-right: 4rem;
+
     }
 
     .middle-section {
+        position: relative;
         margin-left: 4rem;
         margin-right: 4rem;
+        margin-bottom: -30rem;
+        z-index: 2;
+    }
+
+    .footer-box {
+        position: relative;
+        bottom: 0;
+        height: 640px;
+        z-index: 1;
+        align-items: flex-end;
     }
 }
 
 @media screen and (min-width:1440px) {
     .spec-section-1440p {
-        /* display: flex; */
         flex-flow: column nowrap;
         position: absolute;
         justify-content: center;
@@ -263,15 +281,10 @@ body {
         display: flex;
         position: static;
         margin-left: -10rem;
-        ;
-        /* position: relative; */
     }
 
     #main-column-1440p {
         position: relative;
-        /* display: grid;
-            grid-template-columns: 80% */
-
     }
 
     .middle-section {
@@ -302,6 +315,10 @@ body {
     .middle-section {
         margin-left: 10rem;
         margin-right: 10rem;
+        margin-bottom: -20rem;
+    }
+
+    .footer-box {
+        height: 464px;
     }
 }
-
