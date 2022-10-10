@@ -24,15 +24,17 @@ body {
     font-family: 'Epilogue', sans-serif;
     color: var(--grey);
     word-spacing: 0px;
-    font-size: 18px;
-    line-height: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0888889px;
 }
 
 .custom-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    margin: 0px;
 }
 
 .btn-primary {
@@ -74,6 +76,11 @@ body {
     font-size: 48px;
     line-height: 56px;
     word-spacing: -0.5px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.527778px;
+
 }
 
 .heading-m {
@@ -101,7 +108,7 @@ body {
     word-spacing: -2.5px;
 }
 
-#phone-picture {
+.phone-picture {
     margin-top: 2rem;
     width: 100%;
 }
@@ -196,12 +203,52 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.solution-arch {
+    width: 151.47px;
+    height: 16.89px;
+}
+
+@media screen and (max-width:768px) {
+    .glowing-img{
+        display: none;
+    }
+}
+
+
 @media screen and (min-width:768px) {
+
+    body {
+        padding: 1rem;
+        font-family: 'Epilogue', sans-serif;
+        color: var(--grey);
+        word-spacing: 0px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .heading-l {
+        font-size: 48px;
+        line-height: 56px;
+        word-spacing: -0.5px;
+    }
+
     #spec-section {
         display: flex;
         justify-content: space-between;
         padding: 4rem 10rem 1rem 10rem;
     }
+
+    .phone-picture {
+        width: 281px;
+        height: 482px;
+        margin-left: -15rem;
+        z-index: -1;
+    }
+
+    .width-768>div:nth-child(1) {
+        margin-left: -5rem;
+    }
+
 
     .spec-footer {
         flex-flow: row;
@@ -224,12 +271,13 @@ body {
     }
 
     .picture-size {
+        position: relative;
         width: 281;
         height: 482;
     }
 
     .catch-phrase-size {
-        max-width: 573px;
+        width: 573px;
         position: relative;
     }
 
@@ -249,6 +297,8 @@ body {
         margin-right: 4rem;
         margin-bottom: -30rem;
         z-index: 2;
+        /* width: 689px; */
+        height: 684px;
     }
 
     .footer-box {
@@ -258,6 +308,11 @@ body {
         z-index: 1;
         align-items: flex-end;
     }
+
+    .solution-arch {
+        width: 195px;
+        height: 26px;
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -266,14 +321,14 @@ body {
         position: absolute;
         justify-content: center;
         align-items: center;
-        right: 14rem;
+        right: 9rem;
         top: 5rem;
     }
 
     .width-1440p {
         display: flex;
         position: static;
-        margin-left: -10rem;
+        margin-left: 10rem;
     }
 
     #main-column-1440p {
@@ -285,6 +340,8 @@ body {
         flex-flow: row;
         text-align: left;
         justify-content: center;
+        /* width: 1109px; */
+        height: 545px;
     }
 
     .neg-margin {
@@ -314,4 +371,74 @@ body {
     .footer-box {
         height: 464px;
     }
+
+    .catch-phrase-size {
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 78px;
+        letter-spacing: -1px;
+        width: 635px;
+        /* height: 156px; */
+        margin-bottom: 40px;
+    }
+
+    .paragraph-width {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        /* font-weight: 400; */
+        /* font-size: 18px; */
+        /* line-height: 32px; */
+        letter-spacing: 0.1px;
+    }
+
+    .btn-primary {
+        width: 256px;
+        height: 61px;
+    }
+
+    .btn-secondary {
+        width: 256px;
+        height: 61px;
+    }
+
+    .solution-arch {
+        width: 287px;
+        height: 36px;
+    }
+
+    .picture-size {
+        width: 350px;
+        height: 600px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .picture-position {
+        margin-left: -10rem;
+    }
+
+    .phone-image-size {
+        position: relative;
+        width: 375px;
+        height: 600px;
+        margin-bottom: -7.5rem;
+    }
+
+    .glowing-img {
+        margin-top: 10rem;
+        position: relative;
+    }
+
+    .width-768 {
+        justify-content: left;
+    }
+
+    .phone-picture {
+        margin-left: -10rem;
+    }
+
+    .width-768>div:nth-child(1) {
+        margin-left: 0rem;
+    }
+
 }
